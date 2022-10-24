@@ -1,0 +1,1160 @@
+{
+	"info": {
+		"_postman_id": "80e8342c-5614-4444-ba73-8d0ad7fae2ac",
+		"name": "mini project 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24016099"
+	},
+	"item": [
+		{
+			"name": "Product Categories",
+			"item": [
+				{
+					"name": "Create a category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"gaming\",\r\n    \"description\":\"for gaming purposes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/categories",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create a category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"gaming\",\r\n    \"description\":\"for gaming purposes\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://alta-shop.herokuapp.com/api/categories",
+									"protocol": "https",
+									"host": [
+										"alta-shop",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Oct 2022 15:45:46 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "71"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"ID\": 10,\n        \"Name\": \"gaming\",\n        \"Description\": \"for gaming purposes\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get category by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/categories/2",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"categories",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get category by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://alta-shop.herokuapp.com/api/categories/2",
+									"protocol": "https",
+									"host": [
+										"alta-shop",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"categories",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Oct 2022 15:46:12 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "70"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"ID\": 2,\n        \"Name\": \"gaming\",\n        \"Description\": \"for gaming purposes\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/categories",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://alta-shop.herokuapp.com/api/categories",
+									"protocol": "https",
+									"host": [
+										"alta-shop",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Oct 2022 15:46:42 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "480"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"ID\": 2,\n            \"Name\": \"gaming\",\n            \"Description\": \"for gaming purposes\"\n        },\n        {\n            \"ID\": 3,\n            \"Name\": \"gaming\",\n            \"Description\": \"\"\n        },\n        {\n            \"ID\": 5,\n            \"Name\": \"gaming\",\n            \"Description\": \"for gaming purposes\"\n        },\n        {\n            \"ID\": 6,\n            \"Name\": \"gaming\",\n            \"Description\": \"for gaming purposes\"\n        },\n        {\n            \"ID\": 7,\n            \"Name\": \"Dolanan\",\n            \"Description\": \"for gaming purposes\"\n        },\n        {\n            \"ID\": 8,\n            \"Name\": \"Dolanan\",\n            \"Description\": \"Meh nggo dolanan\"\n        },\n        {\n            \"ID\": 9,\n            \"Name\": \"gaming\",\n            \"Description\": \"for gaming purposes\"\n        },\n        {\n            \"ID\": 10,\n            \"Name\": \"gaming\",\n            \"Description\": \"for gaming purposes\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "get all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/products",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://alta-shop.herokuapp.com/api/products",
+									"protocol": "https",
+									"host": [
+										"alta-shop",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Oct 2022 15:47:13 GMT"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"ID\": 4,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 5,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 6,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 7,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 8,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 9,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 10,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 11,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 12,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 13,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 14,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 15,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 16,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 17,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 18,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 19,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 20,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 21,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 22,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 24,\n            \"Name\": \"Sony PS2\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 25,\n            \"Name\": \"Sony PS2\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 3,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"\"\n                }\n            ]\n        },\n        {\n            \"ID\": 26,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 27,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 29,\n            \"Name\": \"a\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 30,\n            \"Name\": \"a\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": []\n        },\n        {\n            \"ID\": 31,\n            \"Name\": \"a\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": []\n        },\n        {\n            \"ID\": 32,\n            \"Name\": \"a\",\n            \"Description\": \"\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": []\n        },\n        {\n            \"ID\": 33,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 35,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        },\n        {\n            \"ID\": 36,\n            \"Name\": \"Sony PS5\",\n            \"Description\": \"play has no limits\",\n            \"Price\": 299,\n            \"Ratings\": 0,\n            \"Categories\": [\n                {\n                    \"ID\": 2,\n                    \"Name\": \"gaming\",\n                    \"Description\": \"for gaming purposes\"\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "create a new products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Sony PS5\",\r\n    \"description\":\"play has no limits\",\r\n    \"price\":299,\r\n    \"categories\":[\r\n        2\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/products",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create a new products",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Sony PS5\",\r\n    \"description\":\"play has no limits\",\r\n    \"price\":299,\r\n    \"categories\":[\r\n        2\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://alta-shop.herokuapp.com/api/products",
+									"protocol": "https",
+									"host": [
+										"alta-shop",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Oct 2022 15:48:36 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"ID\": 37,\n        \"Name\": \"Sony PS5\",\n        \"Description\": \"play has no limits\",\n        \"Price\": 299,\n        \"Ratings\": 0,\n        \"Categories\": [\n            {\n                \"ID\": 2,\n                \"Name\": \"gaming\",\n                \"Description\": \"for gaming purposes\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get product by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/products/4",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get product by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://alta-shop.herokuapp.com/api/products/4",
+									"protocol": "https",
+									"host": [
+										"alta-shop",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"products",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Oct 2022 15:49:21 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "171"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"ID\": 4,\n        \"Name\": \"Sony PS5\",\n        \"Description\": \"play has no limits\",\n        \"Price\": 299,\n        \"Ratings\": 5,\n        \"Categories\": [\n            {\n                \"ID\": 2,\n                \"Name\": \"gaming\",\n                \"Description\": \"for gaming purposes\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete a product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/products/5",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete a product",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://alta-shop.herokuapp.com/api/products/5",
+									"protocol": "https",
+									"host": [
+										"alta-shop",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"products",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Oct 2022 15:49:42 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "14"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Assign a product rating",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"count\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/products/2/ratings",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"2",
+								"ratings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get product rating",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/products/2/ratings",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"2",
+								"ratings"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get product rating",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://alta-shop.herokuapp.com/api/products/2/ratings",
+									"protocol": "https",
+									"host": [
+										"alta-shop",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"products",
+										"2",
+										"ratings"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Oct 2022 15:51:12 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "11"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": 4\n}"
+						}
+					]
+				},
+				{
+					"name": "Create a comment for product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\":\"the games are great including Gran Turismo 7 but sadly GT4 is much better\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/products/2/comments",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"2",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get product comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/products/2/comments",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"2",
+								"comments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get product comments",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://alta-shop.herokuapp.com/api/products/2/comments",
+									"protocol": "https",
+									"host": [
+										"alta-shop",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"products",
+										"2",
+										"comments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Oct 2022 15:52:12 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "148"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"ID\": 1,\n            \"Content\": \"the games are great including Gran Turismo 7 but sadly GT4 is much better\",\n            \"User\": null,\n            \"Product\": null,\n            \"Comment\": null\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"someo@gmail.com\",\r\n    \"password\":\"1231231\",\r\n    \"fullname\":\"Firstnameq Lastname\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/auth/register",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"someo@gmail.com\",\r\n    \"password\":\"1231231\",\r\n    \"fullname\":\"Firstnameq Lastname\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://alta-shop.herokuapp.com/api/auth/register",
+									"protocol": "https",
+									"host": [
+										"alta-shop",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Oct 2022 15:25:21 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "99"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"ID\": 24,\n        \"Fullname\": \"Firstnameq Lastname\",\n        \"Email\": \"someo@gmail.com\",\n        \"Password\": \"1231231\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"someo@gmail.com\",\r\n    \"password\":\"1231231\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"someo@gmail.com\",\r\n    \"password\":\"1231231\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://alta-shop.herokuapp.com/api/auth/login",
+									"protocol": "https",
+									"host": [
+										"alta-shop",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Oct 2022 15:29:51 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "173"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkZpcnN0bmFtZXEgTGFzdG5hbWUiLCJFbWFpbCI6InNvbWVvQGdtYWlsLmNvbSJ9.r8kWX-hm6dQk7ofOdDTvy1Lpn2-0Y89XmIVy9PIzFRc\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get user information",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/auth/info",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"info"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hello",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/hello",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"hello"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "index",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://alta-shop.herokuapp.com/api/hello",
+									"protocol": "https",
+									"host": [
+										"alta-shop",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"api",
+										"hello"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Oct 2022 15:34:44 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "17"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": \"hello\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Create a new order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"product_id\":2,\r\n        \"quantity\":1\r\n    }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/orders",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/orders",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get order by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://alta-shop.herokuapp.com/api/orders/1",
+							"protocol": "https",
+							"host": [
+								"alta-shop",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
